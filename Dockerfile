@@ -21,9 +21,9 @@ RUN apt-get update \
  && apt-get install -y curl tini xvfb graphicsmagick-imagemagick-compat wget unzip \
  && groupadd -g 987 app \
  && useradd -d /app -s /bin/sh -u 987 -g app app \
- && wget https://github.com/ingen084/KyoshinEewViewerIngen/releases/latest/download/KyoshinEewViewer-ubuntu-x64.zip \
- && unzip KyoshinEewViewer-ubuntu-x64.zip \
- && rm -f KyoshinEewViewer-ubuntu-x64.zip \
+ && wget https://github.com/ingen084/KyoshinEewViewerIngen/releases/latest/download/KyoshinEewViewer-ubuntu-arm64.zip \
+ && unzip KyoshinEewViewer-ubuntu-arm64.zip \
+ && rm -f KyoshinEewViewer-ubuntu-arm64.zip \
  && apt-get purge -y wget unzip \
  && apt-get autoremove --purge -y \
  && apt-get clean \
